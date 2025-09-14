@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import {LoginLocators} from '../locators/login.locators.spec';
 
 test.describe('FNB Login & Forgot Password', () => {
 
