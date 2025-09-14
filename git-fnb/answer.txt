@@ -1,0 +1,16 @@
+# CÁC BƯỚC ĐẨY CODE LÊN GITHUB
+
+1. git init                 # Khởi tạo Git repo
+2. git branch -M main       # Tạo branch main
+3. git add -A              # Stage tất cả thay đổi
+4. git commit -m "message" # Tạo commit
+5. git remote add origin <URL> # Thêm remote GitHub
+6. git push -u origin main # Đẩy code lên GitHub
+
+# CẤU HÌNH GIT USERNAME & EMAIL
+
+git config --global user.name "KayTee54"
+git config --global user.email "ginginyb@gmail.com"
+
+# Kiểm tra cấu hình
+git config --list
