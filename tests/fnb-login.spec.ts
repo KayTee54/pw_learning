@@ -15,3 +15,14 @@ test.describe('FNB Login & Forgot Password', () => {
     await expect(page.getByRole('heading', { name: 'Quên mật khẩu' })).toBeVisible();
   });
 });
+test.describe('FNB Login Form Locator', () => {
+
+  test('check valid locators', async ({ page }) => {
+    const loginlocator = new LoginLocators(page);
+    await page.goto('/');
+    await expect(loginlocator.username()).toBeVisible();
+    await expect(loginlocator.password()).toBeVisible();
+    await expect(loginlocator.loginmanagerbtn()).toBeVisible();
+    await expect(loginlocator.loginsalebtn()).toBeVisible();
+  });
+});

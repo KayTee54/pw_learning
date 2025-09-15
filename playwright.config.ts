@@ -5,7 +5,7 @@ export default defineConfig({
   testDir: 'tests',
   use: {
     baseURL: 'https://fnb.kiotviet.vn',
-    headless: true,
+    headless: false,
     locale: 'vi-VN',
   },
   reporter: [['list']],
