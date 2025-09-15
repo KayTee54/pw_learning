@@ -1,7 +1,7 @@
 import { Page } from '@playwright/test';
 
 export class LoginLocators {
-  constructor(private page: Page) {}
+  constructor(private page: Page) {} //khai báo page là thuộc tính của class
 
   username() {
     return this.page.getByLabel(/Tên đăng nhập/i);
